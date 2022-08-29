@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Quicksand:wght@300;500;600;700&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Nunito+Sans:wght@300&family=Quicksand:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contáctanos - Beker</title>
+</head>
+<body>
+    <header class="indexHeader">
+        <h1>BEKER</h1>
+        <nav class="indexHeaderNav navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./equipo.html">Equipo</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./servicios.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Servicios
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./servicios.html">Revisa tu proceso de manera simplificada</a></li>
+                        <li><a class="dropdown-item" href="./servicios.html">Smart contracts</a></li>
+                        <li><a class="dropdown-item" href="./servicios.html">Resolución online de disputas</a></li>
+                        <li><a class="dropdown-item" href="./servicios.html">Legal desing</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contactanos">Contáctanos</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="contactanosMain">
+    <main id="contactanos" class="contactanosFormulario">
+        <h1>CONTACTANOS<img src="../img/contactanos.png" alt="lupa" class="imgContactanos"></h1>
+        <form>
+            <fieldset class="fieldset">
+            <legend>Formulario de contacto</legend>
+                <label for="name">*Nombre:<input type="text" id="name" placeholder="Nombre" autocomplete="name" required/></label><br>
+                <label for="surname">*Apellido:<input type="text" id="surname" placeholder="Apellido" autocomplete="given-name" required/></label></br>
+                <label for="email">*Email:<input type="email" id="surname" placeholder="Email" autocomplete="email" required/></label></br>
+                <label for="tel">*Teléfono:<input type="tel" id="tel" placeholder="Teléfono" autocomplete="tel" required/></label></br>
+                <label for="pais">País:<select id="pais" name="pais">
+                        <option value="Colombia">Colombia</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                    </select></label><br>
+                <label for ="motive">*Tu duda está orientada a?...:<input list="motive"/>
+                    <datalist id="motive">
+                        <option value="Servicios"></option>
+                        <option value="Convocatorias"></option>
+                        <option value="Peticion, queja o reclamo"></option>
+                        <option value="Felicitaciones"></option>
+                        <option value="Otro"></option>
+                    </datalist></label><br>
+                <label for="message">*Tu mensaje:<textarea placeholder="Message" id="message" required></textarea></label><br/>
+                <label for="accept">*He leído y acepto la política de privacidad<input type="checkbox" id="accept" required/></label></br>
+                <p>Privacy Policy: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi animi possimus tenetur architecto et placeat aliquam, sequi doloribus hic, eos maiores fugit repellat temporibus! Magni libero provident reiciendis obcaecati rem. </p>
+                <input type="button" value="Enviar" id="enviar">
+                <input type="reset" value="Limpiar formulario">
+            </fieldset>
+        </form>           
+    </main>
+    <section class="contactanosDatos">
+        <h2>DONDE ENCONTRARNOS</h2>
+        <ul>
+            <li><img src="" alt="">161 # 18 a 32 Oficina 202 - Bogotá D.C.-Colombia</li>
+            <li><img src="" alt="">(57)+313 532 7189</li>
+            <li><img src="" alt="">beker@outlook.es</li>
+            <li><img src="" alt="">Follow us: <br>
+                <img src="../img/logoTwitter.png" alt="logo twitter" class="imgMedia"><a class="snc" href="">Twitter</a><br>
+                <img src="../img/logoInst.png" alt="logo instagram" class="imgMedia"><a class="snc" href="">Instagram</a><br>
+                <img src="../img/logoFB.svg.webp" alt="logo facebook" class="imgMedia"><a class="snc" href="">Facebook</a><br>
+                <img src="../img/logoLinkedin.png" alt="logo linkein" class="imgMedia"><a class="snc" href="">Linkedin</a><br>
+            </li>
+        </ul>
+        <iframe class="googleMap"src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3976.1682254634266!2d-74.04478398469718!3d4.740812742627206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1658860922144!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    </div>
+    </body>
+    <footer class="indexFooter">Todos los derechos reservados
+    </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

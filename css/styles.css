@@ -1,0 +1,555 @@
+/*PROPIEDADES A USAR EN EL CSS
+    font-family: 'Archivo Narrow';
+    font-family: 'Nunito Sans';
+    background-color: #FFBC2C, #511845, #243D44, #167A8B, 
+    color:#E4E4E4; #0e1523 */
+
+/* PARA TIPOGRAFIA Y COLOR
+    Nunito Oscura{
+        color:  #0e1523;
+        font-family: 'Nunito Sans'
+    }
+    Archivo Clara{
+        color: #E4E4E4;
+        font-family: 'Archivo Narrow';
+    }
+    Archivo Oscura{
+        color:  #0e1523;
+        font-family: 'Archivo Narrow';
+    } */
+
+/* ------------------------------------------------------------------------ */
+{#FFBC2C, #511845, #243D44, #167A8B;}
+/* ESTILO GENERAL RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY EN GENERAL */
+body{
+    color:#E4E4E4;
+    font-family: 'Nunito Sans';
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* ESTILOS HTML INDEX */
+/* HEADER */
+.indexHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFBC2C;
+    position: sticky;
+    top: 0;
+    padding: 0.3125em;
+    z-index: 1;
+}
+/* ESTILO TITULO INDEX */
+.indexHeader h1{
+    color:  #0e1523;
+    font-family: 'Archivo Narrow';
+    font-size: 1.5em;
+    padding-left: 1.875em;
+}
+.indexHeader h1:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+/* ESTILOS MENU DE NAVEGACIÓN */
+.indexHeaderNav ul{
+    list-style: none;
+    padding-right: 1.25em;
+}
+.indexHeaderNav ul li{
+    display: inline-block;
+    margin: 1em;
+    padding: 0em 0.1875em;
+}
+.indexHeaderNav ul li a{
+    color: #0e1523;
+    font-family: 'Archivo Narrow';
+    text-decoration: none;
+    font-weight: 200;
+}
+.indexHeaderNav ul li a:hover{
+    background-color: #E4E4E4;
+    transform: scale(1.1);
+    box-shadow: 0.0625em 0.0625em 0.625em #0e1523;
+    transition: 0.3s;
+    border-radius: 0.3125em;
+    padding: 0.321em 0.625em;
+    font-weight: bolder;
+}
+
+
+/* MAIN INDEX */
+.indexMain {
+    background-color: #0e1523;
+    display: flex;
+    align-items: center;
+}
+.indexH1{
+    font-size: 3.75em; 
+    font-family: 'Archivo Narrow';
+    padding: 0.625em;
+}
+.indexMain img{
+    width: 31.25em;
+}
+.indexMain p{
+    font-size: large;
+    padding: 0em 5em;
+    text-align: justify;
+}
+/* --------------GRID INDEX---------------------- */
+.gridIndex{
+    height:100vh;
+    background-color: #0e1523;
+    display: grid;
+    grid-template-columns:  ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+                        "indexHeader indexHeader"
+                        "indexMain indexMain"
+                        "indexFooter indexFooter";
+    justify-items: stretch;
+    align-items: center;
+    /* EXPLICACION hora de la clase GRIDS 25/07 */
+}
+.indexHeader{
+    grid-area: indexHeader;
+}
+.indexMain{
+    grid-area: indexMain;
+    text-align: center;
+}
+.indexFooter{
+    grid-area: indexFooter;
+}
+
+/* FOOTER INDEX */
+.indexFooter{
+    text-align: center;
+    font-size: medium;
+    padding: 1.25em;
+    background-color: #FFBC2C;
+    color:  #0e1523;
+    font-family: 'Archivo Narrow';
+}
+/* ------------MEDIA QUERYS INDEX---------------------- */
+@media only screen and (max-width: 320px){
+    .gridIndex{
+        height: auto;
+        display: grid;
+        grid-template-columns:;
+        grid-template-rows:;
+        grid-template-areas: 
+                            "indexHeader"
+                            "indexMain"
+                            "indexFooter";
+        justify-items: stretch;
+        align-items: center;
+}
+/* ESTILOS HTML INDEX */
+/* HEADER */
+.indexHeader{
+    flex-direction: column;
+}
+/* ESTILO TITULO HEADER INDEX */
+.indexHeader h1{
+    font-size: 1.3rem;
+    align-items: center;
+    padding: 0;
+    margin-top: 0.3125rem;
+}
+
+/* ESTILOS MENU DE NAVEGACIÓN */
+.indexHeaderNav ul{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.indexHeaderNav ul li{
+    align-items: center;
+    margin: 0.2rem;
+}
+.indexHeaderNav ul li a{
+    font-size: 0.8rem;
+}
+/* MAIN INDEX */
+.indexH1{
+    font-size: 2rem; 
+    padding: 0;
+    margin-top: 0.9rem;
+}
+.indexMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 1rem 0;
+}  
+.indexMain img{
+    width: 18rem;
+    }
+.indexMain p{
+    font-size: 0.8rem;
+    padding: 0.25rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* FOOTER INDEX */
+.indexFooter{
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0.8rem;
+}
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* ESTILOS HTML EQUIPO */
+
+.equipoH1{
+    grid-area: equipoH1;
+    font-size: 3em;
+    margin-top: 0.01em;
+}
+.equipoMain h2{
+    text-align: center;
+}
+.santi{
+    grid-area: santi;
+    background-color: #E4E4E4;
+    color: #0e1523;
+    border-radius: 1em;
+    padding: 1em 0.3em; 
+    text-align: center;
+    width: 24rem;
+    height: 33rem;
+    align-self: flex-start;
+    justify-self: end;
+    }
+.santi p{
+        padding: 0%;
+        margin: 0%;
+}
+
+.andrea{
+    grid-area: andrea;
+    background-color: #E4E4E4;
+    color: #0e1523;
+    border-radius: 1em;
+    padding: 1em 0.3em; 
+    text-align: center;
+    width: 24rem;
+    height: 33rem;
+    align-self: flex-start;
+    justify-self: start;
+}
+.andrea p{
+    padding: 0%;
+    margin: 0%;
+}
+.imgEquipo{
+    width: 20em;
+    height: 20em;
+    border-radius: 1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+/* -----------------GRID EQUIPO------------ */
+
+.equipoMain{
+    height: 100vh;
+    background-color: #0e1523;
+    display: grid;
+    grid-template-columns:;
+    grid-template-rows: ;
+    grid-template-areas:
+                        /* "indexHeader indexHeader"  */
+                        "equipoH1 equipoH1"                    
+                        "santi andrea";
+                        /* "indexFooter indexFooter"; */
+    justify-items: center;
+    align-items: center;
+    column-gap: 3em;
+}
+
+/* -------MEDIA QUERYS EQUIPO--------------------- */
+@media only screen and (max-width: 320px){
+    .equipoMain{
+    height:auto;
+    display: grid;
+    grid-template-columns:;
+    grid-template-rows: ;
+    grid-template-areas:
+                        /* "indexHeader"  */
+                        "equipoH1"                    
+                        "santi"
+                        "andrea";
+                        /* "indexFooter"; */
+    justify-items: center;
+    align-items: center;
+    column-gap: 1em;
+    /* EXPLICACION hora de la clase GRIDS 25/07 */
+}
+.equipoH1{
+    font-size: 1.8rem; 
+    padding: 0;
+    margin: 0.9rem;
+}
+.santi{
+    padding: 1rem; 
+    text-align: center;
+    width: 15rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+    justify-self: center;
+}
+.andrea{
+    padding: 1rem ; 
+    text-align: center;
+    width: 15rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+    justify-self: center;
+}
+.imgEquipo{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+.equipoMain h2{
+    font-size: 1rem;
+}
+.equipoMain p{
+    font-size: 0.8rem;
+}
+}
+/* ------------------------------------------------------------------------ */
+/* ESTILOS HTML SERVICIOS */
+.bodyServicios{
+    background-color: #0e1523;
+    z-index: 0;
+}
+.serviciosH1{
+    font-size: 2rem;
+    text-align: center;
+    color: #0e1523;}
+.row{
+    display: flex;
+    justify-content: center;
+
+}
+.card {
+    margin: 2rem;
+    padding: 2rem;
+    width: 100%;
+    color: #0e1523;
+    text-align: justify;
+    align-content: stretch;
+}
+.card-title{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.6rem;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/* ESTILOS HTML BLOG */
+/* A ESTE HTML NO LE APLIQUE ESTILOS YA QUE EL PROFESOR SUGIRIÓ DEJAR UN HTML PARA APLICAR BOOTSTRAP */
+
+.bodyBlog{
+    background-color: #0e1523;
+}
+.blogMain{
+    display: inline-block;
+    display: flex;
+}
+.blogH1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1.8rem;
+}
+.blogUno{
+    border: 0.12rem whitesmoke solid;
+    border-radius: 3rem;
+    padding: 2rem;
+    text-align: justify;
+    margin: 2rem;
+}
+.blogUno h2{
+    margin: 0.5rem;
+    text-align: center;
+}
+.blogUno:hover{
+    transform: scale(1.1);
+    box-shadow: 0.0625em 0.0625em 0.625em #E4E4E4;
+    transition: 0.3s;
+}
+.blogDos{
+    border: 0.12rem whitesmoke solid;
+    border-radius: 3rem;
+    padding: 2rem;
+    text-align: justify;
+    margin: 2rem;
+}
+.blogDos h2{
+    margin: 0.5rem;
+    text-align: center;
+}
+.blogDos:hover{
+    transform: scale(1.1);
+    box-shadow: 0.0625em 0.0625em 0.625em #E4E4E4;
+    transition: 0.3s;
+}
+.imagenBlog{
+    width: 90%;
+    border-radius: 6%;
+    text-align: center;
+}
+aside{
+    text-align: center;
+    padding: 5rem;
+    font-size: 1.5rem;
+}
+
+aside p:hover{
+    transform: scale(1.1);
+    font-weight: bolder;
+}
+.repositorio h2{
+    font-size: 2rem;
+    margin: 1rem;
+    animation-name: colores;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    border-radius: 4rem;
+    padding: 0.6rem;
+}
+.imgRepositorio{
+    width: 20%;
+    margin: 1rem;
+}
+/* ------------------------------------------------------------------------ */
+
+/* ESTILOS HTML CONTACTANOS */
+/* MAIN CONTACTANOS */
+
+.fieldset{
+    border: 0.1rem solid whitesmoke;
+}
+.contactanosFormulario h1{
+    font-size: 3rem;
+}
+.contactanosFormulario{
+    grid-area:contactanosFormulario;
+    width: 90%;
+    padding: 1.25rem;
+}
+.contactanosFormulario input,select,datalist,textarea{
+    width: 80%;
+    margin-left: 2rem;
+
+}
+
+.contactanosFormulario fieldset{
+    padding: 1rem;
+    color: #E4E4E4;
+}
+.imgContactanos{
+    width: 2rem;
+    margin-left: 1.25rem;
+}
+/* DONDE ENCONTRARNOS */
+.contactanosDatos{
+    grid-area: contactanosDatos;
+    background-color: #E4E4E4;
+    border-radius: 0.625rem;
+    color: #0e1523;
+    width:80%;
+    padding: 1rem;
+}
+.contactanosDatos h2{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 1rem;
+
+}
+/* .contactanosDatos ul li{
+    list-style-type:none;
+    padding-left: 0rem;
+} */
+.imgMedia{
+    width: 0.9375rem;
+    margin-right: 0.625rem;
+    margin-left: 2.5rem;
+}
+.googleMap{
+    width:90%; 
+    border:0;
+    margin: 1.25rem;
+}
+/* --------------------GRID CONTACTANOS-------------- */
+.contactanosMain{
+    height: 100vh;
+    background-color: #0e1523;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:;
+    grid-template-areas: 
+                        /* "indexHeader" */
+                        "contactanosFormulario contactanosDatos"                    
+                        /* "indexFooter"; */;
+    justify-items:center;
+    align-items: center;
+}
+/* -------MEDIA QUERYS CONTACTANOS--------------------- */
+@media only screen and (max-width: 320px){
+    .contactanosMain{
+        height: auto;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:;
+        grid-template-areas: 
+                            /* "indexHeader" */
+                            "contactanosFormulario" 
+                            "contactanosDatos"                    
+                            /* "indexFooter"; */;
+        justify-items:center;
+        align-items: center;}
+        .contactanosFormulario h1{
+            font-size: 1.5rem;
+        }
+        .contactanosFormulario input,select,datalist,textarea{
+            margin-left: 1rem;
+        }
+        .imgContactanos{
+            width: 1rem;
+            margin-left: 1.25rem;
+        }
+        /* DONDE ENCONTRARNOS */
+        .contactanosDatos{
+            width:80%;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+    }
+/*-----------------KEYFRAMES---------------- */
+/* DONDE ENCONTRARNOS */
+@keyframes colores {
+    0%   {background-color: #d1971b;}
+    25%  {background-color: #91702b;}
+    50%  {background-color: #dfb762}
+    100% {background-color: #ac8a40;}
+  }
