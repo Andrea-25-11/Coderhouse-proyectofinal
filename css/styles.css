@@ -58,6 +58,10 @@ body{
     transform: scale(1.2);
     transition: 0.5s;
 }
+.indexHeader h1 a{
+    color:#0e1523;
+    text-decoration: none;
+}
 /* ESTILOS MENU DE NAVEGACIÓN */
 .indexHeaderNav ul{
     list-style: none;
