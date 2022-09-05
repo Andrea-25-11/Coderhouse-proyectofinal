@@ -1,0 +1,42 @@
+//MIXING
+@mixin principal{
+    background-color: #0E1523;
+    color: #E4E4E4;
+};
+@mixin secundario{
+    background-color: #E4E4E4;
+    color: #0E1523;
+};
+@mixin extremos{
+    background-color: #FFBC2C;
+    color:#0E1523;
+    font-family: 'Archivo Narrow';
+};
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+@mixin marpad($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+};
+@mixin widhei($width,$height){
+    width: $width;
+    height: $height;
+}
+@mixin equipo{
+    background-color: #E4E4E4;
+    color: #0E1523;
+    border-radius: 1em;
+    @include marpad(1em 0em,1em 0.3em);
+    text-align: center;
+    @include widhei (24rem, 33rem);
+    justify-self: end;
+}
+@mixin titulos{
+    @include marpad(0em,3em);
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bolder;
+}

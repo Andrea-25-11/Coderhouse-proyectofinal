@@ -1,0 +1,6 @@
+%formatoBlog{
+    border: solid 0.2rem whitesmoke;
+    border-radius:1rem;
+    @include secundario;
+    @include marpad(2rem,1rem);
+}
