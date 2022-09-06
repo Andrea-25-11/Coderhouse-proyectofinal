@@ -1,3 +1,22 @@
+body .blogMain .blogUno, body .blogMain .blogDos {
+  border: solid 0.2rem whitesmoke;
+  border-radius: 1rem;
+  background-color: #E4E4E4;
+  color: #0E1523;
+  margin: 2rem;
+  padding: 1rem; }
+
+body .equipoMain .perfiles .santi, body .equipoMain .perfiles .andrea {
+  background-color: #E4E4E4;
+  color: #0E1523;
+  border-radius: 1em;
+  margin: 1em 0em;
+  padding: 1em 0.3em;
+  text-align: center;
+  width: 24rem;
+  height: 33rem;
+  justify-self: end; }
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +27,8 @@ body {
   color: #E4E4E4;
   font-family: "Nunito Sans"; }
   body header {
+    width: 100%;
+    height: 20%;
     z-index: 1;
     background-color: #FFBC2C;
     color: #0E1523;
@@ -50,228 +71,204 @@ body {
           margin: 1em;
           padding: 0.6em 1em; }
   body .indexMain {
-    display: flex; }
+    display: flex;
+    align-items: center; }
+    @media only screen and (max-width: 600px) {
+      body .indexMain {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; } }
     body .indexMain .indexH1 {
-      font-size: 4em;
+      font-size: 3rem;
       text-align: center;
-      margin: 1em;
-      padding: 2em; }
+      margin: 1rem;
+      padding: 2rem; }
+      @media only screen and (max-width: 600px) {
+        body .indexMain .indexH1 {
+          font-size: 2rem; } }
     body .indexMain img {
-      display: flex;
-      width: 30rem;
-      justify-content: center; }
+      height: auto;
+      width: 80%;
+      justify-content: center;
+      text-align: center;
+      margin-left: 4rem; }
     body .indexMain .indexMain2div {
       display: flex;
       flex-direction: column;
       align-self: center;
-      margin: 6em;
-      padding: 2em; }
-      body .indexMain .indexMain2div p {
-        text-align: justify;
-        font-size: 1.8rem; }
-
-.equipoMain h1 {
-  margin: 0em;
-  padding: 3em;
-  display: inline-block;
-  font-size: 2em;
-  font-weight: bolder;
-  align-items: center; }
-
-.equipoMain h2 {
-  margin-top: 1em; }
-
-.equipoMain img {
-  width: 18em;
-  height: 18em;
-  margin-top: 2em;
-  border-radius: 1em; }
-
-.equipoMain .perfiles {
-  display: flex;
-  gap: 3em;
-  justify-content: center; }
-  .equipoMain .perfiles .santi {
-    background-color: #E4E4E4;
-    color: #0E1523;
-    border-radius: 1em;
-    margin: 1em 0em;
-    padding: 1em 0.3em;
-    text-align: center;
-    width: 24rem;
-    height: 33rem;
-    justify-self: end; }
-  .equipoMain .perfiles .andrea {
-    background-color: #E4E4E4;
-    color: #0E1523;
-    border-radius: 1em;
-    margin: 1em 0em;
-    padding: 1em 0.3em;
-    text-align: center;
-    width: 24rem;
-    height: 33rem;
-    justify-self: end; }
-
-.serviciosMain {
-  z-index: 0; }
-  .serviciosMain h1 {
+      margin: 6rem;
+      padding: 2rem; }
+    body .indexMain p {
+      text-align: justify;
+      font-size: 1.8rem; }
+      @media only screen and (max-width: 600px) {
+        body .indexMain p {
+          font-size: 1.5rem; } }
+  body .equipoMain h1 {
     margin: 0em;
     padding: 3em;
     display: inline-block;
     font-size: 2em;
     font-weight: bolder;
+    width: auto;
     display: flex;
+    align-items: center; }
+  body .equipoMain h2 {
+    margin-top: 1em; }
+  body .equipoMain img {
+    width: 18em;
+    height: 18em;
+    margin-top: 2em;
+    border-radius: 1em; }
+    @media only screen and (max-width: 600px) {
+      body .equipoMain img {
+        width: 12rem;
+        height: 12rem; } }
+  body .equipoMain .perfiles {
+    display: flex;
+    gap: 3em;
     justify-content: center; }
-  .serviciosMain .row {
-    display: flex;
-    justify-content: center; }
-  .serviciosMain .card {
-    margin: 2em;
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-    text-align: justify; }
-    .serviciosMain .card h5 {
-      color: #0e1523;
+    @media only screen and (max-width: 600px) {
+      body .equipoMain .perfiles {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+    @media only screen and (max-width: 600px) {
+      body .equipoMain .perfiles .santi {
+        width: 18rem;
+        height: 30rem;
+        text-align: center; } }
+    @media only screen and (max-width: 600px) {
+      body .equipoMain .perfiles .andrea {
+        width: 18rem;
+        height: 28rem;
+        text-align: center; } }
+  body .serviciosMain {
+    z-index: 0; }
+    body .serviciosMain h1 {
+      margin: 0em;
+      padding: 3em;
+      display: inline-block;
+      font-size: 2em;
       font-weight: bolder;
-      text-align: center; }
-    .serviciosMain .card p {
-      color: #0e1523; }
-    .serviciosMain .card a {
       display: flex;
       justify-content: center; }
-
-.blogMain {
-  background-color: #0e1523; }
-  .blogMain h1 {
-    margin: 0em;
-    padding: 3em;
-    display: inline-block;
-    font-size: 2em;
-    font-weight: bolder;
-    display: flex;
-    justify-content: center; }
-  .blogMain .blogsAB {
-    display: flex; }
-  .blogMain p, .blogMain h2 {
-    text-align: justify;
-    padding: 0rem 2rem; }
-  .blogMain h2 {
+    body .serviciosMain .row {
+      display: flex;
+      justify-content: center; }
+    body .serviciosMain .card {
+      margin: 2em;
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+      text-align: justify; }
+      body .serviciosMain .card h5 {
+        color: #0e1523;
+        font-weight: bolder;
+        text-align: center; }
+      body .serviciosMain .card p {
+        color: #0e1523; }
+      body .serviciosMain .card a {
+        display: flex;
+        justify-content: center; }
+  body .blogMain {
+    background-color: #0e1523; }
+    @media only screen and (max-width: 600px) {
+      body .blogMain {
+        display: flex;
+        flex-direction: column; } }
+    body .blogMain h1 {
+      margin: 0em;
+      padding: 3em;
+      display: inline-block;
+      font-size: 2em;
+      font-weight: bolder;
+      display: flex;
+      justify-content: center; }
+    body .blogMain .blogsAB {
+      display: flex; }
+      @media only screen and (max-width: 600px) {
+        body .blogMain .blogsAB {
+          display: flex;
+          flex-direction: column; } }
+    body .blogMain p, body .blogMain h2 {
+      text-align: justify;
+      padding: 0rem 2rem; }
+    body .blogMain h2 {
+      text-align: center;
+      padding: 0rem 2rem;
+      font-size: 1.2rem;
+      padding: 1rem; }
+    body .blogMain .imagenBlog {
+      width: 80%;
+      border-radius: 4%;
+      display: flex;
+      align-self: center;
+      margin: 1rem;
+      padding: 0rem; }
+  body .repositorio h2 {
     text-align: center;
     padding: 0rem 2rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding: 1rem; }
-  .blogMain .blogUno {
-    border: solid 0.2rem whitesmoke;
-    border-radius: 1rem;
-    background-color: #E4E4E4;
-    color: #0E1523;
-    margin: 2rem;
-    padding: 1rem; }
-  .blogMain .blogDos {
-    border: solid 0.2rem whitesmoke;
-    border-radius: 1rem;
-    background-color: #E4E4E4;
-    color: #0E1523;
-    margin: 2rem;
-    padding: 1rem; }
-  .blogMain .imagenBlog {
-    width: 80%;
-    border-radius: 4%;
+  body .repositorio p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem; }
+    body .repositorio p:hover {
+      transform: scale(1.1);
+      box-shadow: 0.0625em 0.0625em 0.625em whitesmoke;
+      transition: 0.3s; }
+  body .contactanosMain {
     display: flex;
-    align-self: center;
-    margin: 1rem;
-    padding: 0rem; }
-
-.repositorio h2 {
-  text-align: center;
-  padding: 0rem 2rem;
-  font-size: 2rem;
-  padding: 1rem; }
-
-.repositorio p {
-  text-align: center;
-  font-size: 1.5rem; }
-  .repositorio p:hover {
-    transform: scale(1.1);
-    box-shadow: 0.0625em 0.0625em 0.625em #E4E4E4;
-    transition: 0.3s; }
-
-.repositorio .imgRepositorio {
-  width: 20%;
-  justify-content: center; }
-
-.contactanosMain {
-  display: flex;
-  /* DONDE ENCONTRARNOS */
-  /* --------------------GRID CONTACTANOS-------------- */
-  /* -------MEDIA QUERYS CONTACTANOS--------------------- */ }
-  .contactanosMain .contactanosFormulario {
-    grid-area: contactanosFormulario;
-    width: 60%;
-    height: 100%;
-    padding: 1.25rem; }
-    .contactanosMain .contactanosFormulario h1 {
-      font-size: 3rem; }
-    .contactanosMain .contactanosFormulario .contactanosFormulario input, .contactanosMain .contactanosFormulario select, .contactanosMain .contactanosFormulario datalist, .contactanosMain .contactanosFormulario textarea {
-      width: 90%;
-      margin-left: 2rem; }
-    .contactanosMain .contactanosFormulario fieldset {
-      padding: 1rem; }
-    .contactanosMain .contactanosFormulario .imgContactanos {
-      width: 3rem;
-      margin-left: 1.25rem; }
-  .contactanosMain .contactanosDatos {
-    grid-area: contactanosDatos;
-    background-color: #E4E4E4;
-    color: #0E1523;
-    border-radius: 0.625rem;
-    margin: 2rem;
-    padding: 1.25rem; }
-    .contactanosMain .contactanosDatos ul li {
-      list-style-type: none; }
-    .contactanosMain .contactanosDatos .imgMedia {
-      width: 0.9375rem;
-      margin-right: 0.625rem;
-      margin-left: 2.5rem; }
-    .contactanosMain .contactanosDatos .googleMap {
-      width: 90%;
-      border: 0;
-      margin: 1.25rem; }
-  .contactanosMain .contactanosMain {
-    height: auto;
-    background-color: #0e1523;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "contactanosFormulario contactanosDatos";
-    justify-items: center;
-    align-items: center; }
-  @media only screen and (max-width: 320px) {
-      .contactanosMain .contactanosMain {
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "contactanosFormulario" "contactanosDatos";
-        justify-items: center;
-        align-items: center; }
-      .contactanosMain .contactanosFormulario h1 {
-        font-size: 1.5rem; }
-      .contactanosMain .contactanosFormulario input, .contactanosMain select, .contactanosMain datalist, .contactanosMain textarea {
-        margin-left: 1rem; }
-      .contactanosMain .imgContactanos {
-        width: 1rem;
+    /* DONDE ENCONTRARNOS */ }
+    body .contactanosMain .contactanosFormulario {
+      width: 60%;
+      height: 100%;
+      padding: 1.25rem; }
+      body .contactanosMain .contactanosFormulario h1 {
+        font-size: 3rem; }
+        @media only screen and (max-width: 600px) {
+          body .contactanosMain .contactanosFormulario h1 {
+            font-size: 2rem; } }
+      body .contactanosMain .contactanosFormulario .contactanosFormulario input, body .contactanosMain .contactanosFormulario select, body .contactanosMain .contactanosFormulario datalist, body .contactanosMain .contactanosFormulario textarea {
+        width: 90%;
+        margin-left: 2rem; }
+      body .contactanosMain .contactanosFormulario fieldset {
+        padding: 1rem;
+        color: whitesmoke; }
+      body .contactanosMain .contactanosFormulario .imgContactanos {
+        width: 3rem;
         margin-left: 1.25rem; }
-      .contactanosMain .contactanosDatos {
-        width: 80%;
-        padding: 1.25rem;
-        margin-bottom: 1rem; } }
-
-footer {
-  background-color: #FFBC2C;
-  color: #0E1523;
-  font-family: 'Archivo Narrow';
-  margin: 0em;
-  padding: 1.2em;
-  text-align: center; }
+        @media only screen and (max-width: 600px) {
+          body .contactanosMain .contactanosFormulario .imgContactanos {
+            width: 1.5rem; } }
+    body .contactanosMain .contactanosDatos {
+      background-color: #E4E4E4;
+      color: #0E1523;
+      border-radius: 0.625rem;
+      margin: 2rem;
+      padding: 1.25rem; }
+      body .contactanosMain .contactanosDatos ul li {
+        list-style-type: none; }
+      body .contactanosMain .contactanosDatos .imgMedia {
+        width: 0.9375rem;
+        margin-right: 0.625rem;
+        margin-left: 2.5rem; }
+      body .contactanosMain .contactanosDatos .googleMap {
+        width: 90%;
+        border: 0;
+        margin: 1.25rem; }
+    @media only screen and (max-width: 560px) {
+      body .contactanosMain {
+        display: flex;
+        flex-direction: column; } }
+  body footer {
+    background-color: #FFBC2C;
+    color: #0E1523;
+    font-family: 'Archivo Narrow';
+    margin: 0em;
+    padding: 1.2em;
+    text-align: center; }

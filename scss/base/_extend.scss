@@ -3,4 +3,12 @@
     border-radius:1rem;
     @include secundario;
     @include marpad(2rem,1rem);
-}
+};
+%equipo{
+    background-color: #E4E4E4;
+    color: #0E1523;
+    border-radius: 1em;
+    @include marpad(1em 0em,1em 0.3em);
+    text-align: center;
+    @include widhei (24rem, 33rem);
+    justify-self: end;};
