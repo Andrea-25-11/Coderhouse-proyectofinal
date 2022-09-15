@@ -71,6 +71,7 @@ body {
           margin: 1em;
           padding: 0.6em 1em; }
   body .indexMain {
+    height: 100vh;
     display: flex;
     align-items: center; }
     @media only screen and (max-width: 600px) {
@@ -100,25 +101,26 @@ body {
       padding: 2rem; }
     body .indexMain p {
       text-align: justify;
-      font-size: 1.8rem; }
+      font-size: 1.2rem; }
       @media only screen and (max-width: 600px) {
         body .indexMain p {
-          font-size: 1.5rem; } }
+          font-size: 1rem; } }
   body .equipoMain h1 {
-    margin: 0em;
-    padding: 3em;
+    margin: 1rem;
+    padding: 2rem;
     display: inline-block;
-    font-size: 2em;
+    font-size: 3rem;
     font-weight: bolder;
     width: auto;
     display: flex;
+    justify-content: space-around;
     align-items: center; }
   body .equipoMain h2 {
     margin-top: 1em; }
   body .equipoMain img {
-    width: 18em;
-    height: 18em;
-    margin-top: 2em;
+    width: 15rem;
+    height: 15rem;
+    margin-top: 2rem;
     border-radius: 1em; }
     @media only screen and (max-width: 600px) {
       body .equipoMain img {
@@ -127,7 +129,9 @@ body {
   body .equipoMain .perfiles {
     display: flex;
     gap: 3em;
-    justify-content: center; }
+    justify-content: center;
+    margin: 1rem;
+    padding: 0rem; }
     @media only screen and (max-width: 600px) {
       body .equipoMain .perfiles {
         width: auto;
@@ -147,10 +151,10 @@ body {
   body .serviciosMain {
     z-index: 0; }
     body .serviciosMain h1 {
-      margin: 0em;
-      padding: 3em;
+      margin: 1rem;
+      padding: 2rem;
       display: inline-block;
-      font-size: 2em;
+      font-size: 3rem;
       font-weight: bolder;
       display: flex;
       justify-content: center; }
@@ -179,10 +183,10 @@ body {
         display: flex;
         flex-direction: column; } }
     body .blogMain h1 {
-      margin: 0em;
-      padding: 3em;
+      margin: 1rem;
+      padding: 2rem;
       display: inline-block;
-      font-size: 2em;
+      font-size: 3rem;
       font-weight: bolder;
       display: flex;
       justify-content: center; }
@@ -202,9 +206,8 @@ body {
       padding: 1rem; }
     body .blogMain .imagenBlog {
       width: 80%;
+      border: gray solid 0.1rem;
       border-radius: 4%;
-      display: flex;
-      align-self: center;
       margin: 1rem;
       padding: 0rem; }
   body .repositorio h2 {
@@ -222,12 +225,18 @@ body {
       box-shadow: 0.0625em 0.0625em 0.625em whitesmoke;
       transition: 0.3s; }
   body .contactanosMain {
+    height: 100vh;
+    align-items: center;
     display: flex;
     /* DONDE ENCONTRARNOS */ }
     body .contactanosMain .contactanosFormulario {
       width: 60%;
-      height: 100%;
-      padding: 1.25rem; }
+      margin: 2rem;
+      padding: 1.2rem; }
+      @media only screen and (max-width: 600px) {
+        body .contactanosMain .contactanosFormulario {
+          width: 90%;
+          margin: 2rem; } }
       body .contactanosMain .contactanosFormulario h1 {
         font-size: 3rem; }
         @media only screen and (max-width: 600px) {
@@ -246,10 +255,11 @@ body {
           body .contactanosMain .contactanosFormulario .imgContactanos {
             width: 1.5rem; } }
     body .contactanosMain .contactanosDatos {
+      height: 60%;
       background-color: #E4E4E4;
       color: #0E1523;
       border-radius: 0.625rem;
-      margin: 2rem;
+      margin: 0rem;
       padding: 1.25rem; }
       body .contactanosMain .contactanosDatos ul li {
         list-style-type: none; }

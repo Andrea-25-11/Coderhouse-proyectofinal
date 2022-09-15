@@ -35,8 +35,8 @@
     justify-self: end;
 }
 @mixin titulos{
-    @include marpad(0em,3em);
+    @include marpad(1rem,2rem);
     display: inline-block;
-    font-size: 2em;
+    font-size: 3rem;
     font-weight: bolder;
 }

@@ -61,6 +61,7 @@ body{
         }
     }
     .indexMain{
+        height: 100vh;
         display: flex;
         align-items: center;
         @media only screen and (max-width: 600px){
@@ -90,9 +91,9 @@ body{
             @include marpad(6rem,2rem);}
         p{
             text-align: justify;
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             @media only screen and (max-width: 600px){
-                font-size: 1.5rem;
+                font-size: 1rem;
         }
         }
     }
@@ -101,15 +102,16 @@ body{
             @include titulos;
             width: auto;
             display: flex;
+            justify-content: space-around;
             align-items: center;
         }
         h2{
             margin-top: 1em;
         }
         img{
-            width: 18em;
-            height: 18em;
-            margin-top: 2em;
+            width: 15rem;
+            height: 15rem;
+            margin-top: 2rem;
             border-radius: 1em;
             @media only screen and (max-width: 600px){
                 @include widhei (12rem, 12rem);
@@ -120,6 +122,7 @@ body{
             display: flex;
             gap: 3em;
             justify-content: center;
+            @include marpad (1rem, 0rem);
             @media only screen and (max-width: 600px){
                 width: auto;
                 display: flex;
@@ -206,9 +209,8 @@ body{
         }
         .imagenBlog{
             width: 80%;
+            border: gray solid 0.1rem;
             border-radius: 4%;
-            display: flex;
-            align-self: center;   
             @include marpad(1rem, 0rem);   
         }
         }
@@ -231,11 +233,16 @@ body{
         }
     }
     .contactanosMain{
+        height: 100vh;
+        align-items: center;
         display:flex;
         .contactanosFormulario{
             width: 60%;
-            height: 100%;
-            padding: 1.25rem;
+            @include marpad(2rem,1.2rem);
+            @media only screen and (max-width: 600px){
+            width: 90%;
+            margin:2rem ;
+            }
             h1{
                 font-size: 3rem;
                 @media only screen and (max-width: 600px){
@@ -259,9 +266,10 @@ body{
     }
         /* DONDE ENCONTRARNOS */
         .contactanosDatos{
+            height: 60%;
             @include secundario;
             border-radius: 0.625rem;
-            @include marpad(2rem,1.25rem);
+            @include marpad(0rem,1.25rem);
             ul{
                 li{
                     list-style-type:none;
