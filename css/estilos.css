@@ -17,6 +17,16 @@ body .equipoMain .perfiles .santi, body .equipoMain .perfiles .andrea {
   height: 33rem;
   justify-self: end; }
 
+@keyframes example {
+  0% {
+    background-color: #0E1523; }
+  25% {
+    background-color: #162136; }
+  50% {
+    background-color: #2f4571; }
+  100% {
+    background-color: #4061a2; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -70,6 +80,11 @@ body {
           font-weight: bolder;
           margin: 1em;
           padding: 0.6em 1em; }
+          @media only screen and (max-width: 600px) {
+            body header nav ul li a:hover {
+              transform: scale(0.7);
+              display: flex;
+              flex-wrap: wrap; } }
   body .indexMain {
     height: 100vh;
     display: flex;
@@ -93,12 +108,19 @@ body {
       justify-content: center;
       text-align: center;
       margin-left: 4rem; }
+      @media only screen and (max-width: 600px) {
+        body .indexMain img {
+          margin-left: 2rem; } }
     body .indexMain .indexMain2div {
       display: flex;
       flex-direction: column;
       align-self: center;
       margin: 6rem;
       padding: 2rem; }
+      @media only screen and (max-width: 600px) {
+        body .indexMain .indexMain2div {
+          margin: 2rem;
+          padding: 1rem; } }
     body .indexMain p {
       text-align: justify;
       font-size: 1.2rem; }
@@ -162,11 +184,13 @@ body {
       display: flex;
       justify-content: center; }
     body .serviciosMain .card {
-      margin: 2em;
-      padding: 1em;
+      margin: 2rem;
+      padding: 1rem;
       display: flex;
       justify-content: center;
       text-align: justify; }
+      body .serviciosMain .card img {
+        padding: 2rem; }
       body .serviciosMain .card h5 {
         color: #0e1523;
         font-weight: bolder;
@@ -211,15 +235,20 @@ body {
       margin: 1rem;
       padding: 0rem; }
   body .repositorio h2 {
+    background-color: #0e1523;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     text-align: center;
-    padding: 0rem 2rem;
+    border-radius: 2rem;
+    padding: 1rem 0rem;
     font-size: 2rem;
-    padding: 1rem; }
+    margin: 0rem 2rem 1rem 2rem; }
   body .repositorio p {
     text-align: center;
     font-size: 1.5rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem; }
+    padding-bottom: 1rem; }
     body .repositorio p:hover {
       transform: scale(1.1);
       box-shadow: 0.0625em 0.0625em 0.625em whitesmoke;
@@ -229,6 +258,9 @@ body {
     align-items: center;
     display: flex;
     /* DONDE ENCONTRARNOS */ }
+    @media only screen and (max-width: 600px) {
+      body .contactanosMain {
+        height: auto; } }
     body .contactanosMain .contactanosFormulario {
       width: 60%;
       margin: 2rem;
@@ -261,6 +293,10 @@ body {
       border-radius: 0.625rem;
       margin: 0rem;
       padding: 1.25rem; }
+      @media only screen and (max-width: 600px) {
+        body .contactanosMain .contactanosDatos {
+          margin-bottom: 2rem;
+          width: 80%; } }
       body .contactanosMain .contactanosDatos ul li {
         list-style-type: none; }
       body .contactanosMain .contactanosDatos .imgMedia {

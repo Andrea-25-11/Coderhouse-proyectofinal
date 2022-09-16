@@ -4,6 +4,12 @@
 @import "base/listas";
 @import "base/extend";
 @import "base/map";
+@keyframes example {
+    0%   {background-color: #0E1523}
+    25%  {background-color: #162136}
+    50%  {background-color: #2f4571}
+    100% {background-color: #4061a2}
+  }
 *{
     @include reset;
 }
@@ -54,6 +60,11 @@ body{
                         border-radius: 0.3125em;
                         font-weight: bolder;
                         @include marpad(1em, 0.6em 1em);
+                        @media only screen and (max-width: 600px){
+                            transform: scale(0.7);
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
                     }
                     }
                 }
@@ -83,12 +94,19 @@ body{
             justify-content: center;
             text-align: center;
             margin-left: 4rem;
+            @media only screen and (max-width: 600px){
+                margin-left: 2rem;
+        }
         }
         .indexMain2div{
             display: flex;
             flex-direction: column;
             align-self: center;
-            @include marpad(6rem,2rem);}
+            @include marpad(6rem,2rem);
+            @media only screen and (max-width: 600px){
+                @include marpad(2rem,1rem);
+        }
+        }
         p{
             text-align: justify;
             font-size: 1.2rem;
@@ -156,10 +174,13 @@ body{
             justify-content: center;
         }
         .card{
-            @include marpad(2em, 1em);
+            @include marpad(2rem, 1rem);
             display: flex;
             justify-content: center;
             text-align: justify;
+            img{
+                padding: 2rem;
+            }
             h5{
                 color: nth($colores,1);
                 font-weight: bolder;
@@ -216,15 +237,20 @@ body{
         }
     .repositorio{
         h2{
+        background-color: #0e1523;
+        animation-name: example;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
         text-align: center;
-        padding: 0rem 2rem;
+        border-radius: 2rem;
+        padding: 1rem 0rem;
         font-size: 2rem;
-        padding: 1rem;}
+        margin: 0rem 2rem 1rem 2rem;}
         p{
             text-align: center;
             font-size: 1.5rem;
             padding-bottom: 1rem;
-            margin-bottom: 1rem;
             &:hover{
                 transform: scale(1.1);
                 box-shadow: 0.0625em 0.0625em 0.625em map-get($map:$varios, $key:color-varios);
@@ -236,6 +262,8 @@ body{
         height: 100vh;
         align-items: center;
         display:flex;
+        @media only screen and (max-width: 600px){
+            height:auto;}
         .contactanosFormulario{
             width: 60%;
             @include marpad(2rem,1.2rem);
@@ -270,6 +298,10 @@ body{
             @include secundario;
             border-radius: 0.625rem;
             @include marpad(0rem,1.25rem);
+            @media only screen and (max-width: 600px){
+                margin-bottom: 2rem;
+                width: 80%;
+            }
             ul{
                 li{
                     list-style-type:none;
