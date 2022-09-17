@@ -116,6 +116,7 @@ body{
         }
     }
     .equipoMain{
+        height: 100vh;
         h1{
             @include titulos;
             width: auto;
@@ -246,7 +247,10 @@ body{
         border-radius: 2rem;
         padding: 1rem 0rem;
         font-size: 2rem;
-        margin: 0rem 2rem 1rem 2rem;}
+        margin: 0rem 2rem 1rem 2rem;
+        @media only screen and (max-width: 600px){
+            font-size: 1.5rem;}
+        }
         p{
             text-align: center;
             font-size: 1.5rem;
