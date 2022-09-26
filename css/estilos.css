@@ -91,6 +91,7 @@ body {
     align-items: center; }
     @media only screen and (max-width: 600px) {
       body .indexMain {
+        height: auto;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column; } }
@@ -127,51 +128,52 @@ body {
       @media only screen and (max-width: 600px) {
         body .indexMain p {
           font-size: 1rem; } }
-  body .equipoMain {
-    height: 100vh; }
-    body .equipoMain h1 {
-      margin: 1rem;
-      padding: 2rem;
-      display: inline-block;
-      font-size: 3rem;
-      font-weight: bolder;
-      width: auto;
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
-    body .equipoMain h2 {
-      margin-top: 1em; }
-    body .equipoMain img {
-      width: 15rem;
-      height: 15rem;
-      margin-top: 2rem;
-      border-radius: 1em; }
-      @media only screen and (max-width: 600px) {
-        body .equipoMain img {
-          width: 12rem;
-          height: 12rem; } }
-    body .equipoMain .perfiles {
-      display: flex;
-      gap: 3em;
-      justify-content: center;
-      margin: 1rem;
-      padding: 0rem; }
-      @media only screen and (max-width: 600px) {
-        body .equipoMain .perfiles {
-          width: auto;
-          display: flex;
-          flex-direction: column;
-          align-items: center; } }
-      @media only screen and (max-width: 600px) {
-        body .equipoMain .perfiles .santi {
-          width: 18rem;
-          height: 30rem;
-          text-align: center; } }
-      @media only screen and (max-width: 600px) {
-        body .equipoMain .perfiles .andrea {
-          width: 18rem;
-          height: 28rem;
-          text-align: center; } }
+  @media only screen and (max-width: 600px) {
+    body .equipoMain {
+      height: auto; } }
+  body .equipoMain h1 {
+    margin: 1rem;
+    padding: 2rem;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bolder;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  body .equipoMain h2 {
+    margin-top: 1em; }
+  body .equipoMain img {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 2rem;
+    border-radius: 1em; }
+    @media only screen and (max-width: 600px) {
+      body .equipoMain img {
+        width: 12rem;
+        height: 12rem; } }
+  body .equipoMain .perfiles {
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    margin: 1rem;
+    padding: 0rem; }
+    @media only screen and (max-width: 600px) {
+      body .equipoMain .perfiles {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+    @media only screen and (max-width: 600px) {
+      body .equipoMain .perfiles .santi {
+        width: 18rem;
+        height: 30rem;
+        text-align: center; } }
+    @media only screen and (max-width: 600px) {
+      body .equipoMain .perfiles .andrea {
+        width: 18rem;
+        height: 28rem;
+        text-align: center; } }
   body .serviciosMain {
     z-index: 0; }
     body .serviciosMain h1 {

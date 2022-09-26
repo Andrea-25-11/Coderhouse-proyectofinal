@@ -76,6 +76,7 @@ body{
         display: flex;
         align-items: center;
         @media only screen and (max-width: 600px){
+            height:auto;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
@@ -116,7 +117,9 @@ body{
         }
     }
     .equipoMain{
-        height: 100vh;
+        @media only screen and (max-width: 600px){
+            height:auto
+        }
         h1{
             @include titulos;
             width: auto;
